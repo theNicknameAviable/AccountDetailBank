@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30E033EC360BC14D148ECA89 /* Pods_AccountDetailBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E66DACAFE43E8EE11FA268F /* Pods_AccountDetailBank.framework */; };
 		4F659D7027DFD0BD00354643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F659D6F27DFD0BD00354643 /* AppDelegate.swift */; };
 		4F659D7227DFD0BD00354643 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F659D7127DFD0BD00354643 /* SceneDelegate.swift */; };
 		4F659D7427DFD0BD00354643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F659D7327DFD0BD00354643 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E66DACAFE43E8EE11FA268F /* Pods_AccountDetailBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountDetailBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F659D6C27DFD0BD00354643 /* AccountDetailBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountDetailBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F659D6F27DFD0BD00354643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F659D7127DFD0BD00354643 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4F659D7827DFD0C000354643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F659D7B27DFD0C000354643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F659D7D27DFD0C000354643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.release.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.release.xcconfig"; sourceTree = "<group>"; };
+		FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.debug.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E033EC360BC14D148ECA89 /* Pods_AccountDetailBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4F659D6E27DFD0BD00354643 /* AccountDetailBank */,
 				4F659D6D27DFD0BD00354643 /* Products */,
+				BB455160A40435D8BD092443 /* Pods */,
+				AF0DCD9C12E0FA158DBC839F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AccountDetailBank;
 			sourceTree = "<group>";
 		};
+		AF0DCD9C12E0FA158DBC839F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E66DACAFE43E8EE11FA268F /* Pods_AccountDetailBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB455160A40435D8BD092443 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */,
+				C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F659D8027DFD0C000354643 /* Build configuration list for PBXNativeTarget "AccountDetailBank" */;
 			buildPhases = (
+				56E82470C78258235867681F /* [CP] Check Pods Manifest.lock */,
 				4F659D6827DFD0BD00354643 /* Sources */,
 				4F659D6927DFD0BD00354643 /* Frameworks */,
 				4F659D6A27DFD0BD00354643 /* Resources */,
+				9E0FCBD90F0FAAD85DC54C54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E82470C78258235867681F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountDetailBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0FCBD90F0FAAD85DC54C54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F659D6827DFD0BD00354643 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		4F659D8127DFD0C000354643 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		4F659D8227DFD0C000354643 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
