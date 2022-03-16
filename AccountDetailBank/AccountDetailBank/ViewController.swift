@@ -17,7 +17,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        accountTable
+        accountTable.rowHeight = 100
+        accountTable.dataSource = self
+        accountTable.delegate = self
  
     }
 
@@ -32,10 +34,28 @@ extension ViewController {
         return accountTable.count
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return NSLocalizedString("Account Detail", comment: "")
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         <#code#>
     }
     
+}
+
+//MARK: - Load Json
+
+extension ViewController {
+    
+    func loadJson() {
+        
+        
+    }
     
 }
     
