@@ -37,15 +37,4 @@ extension ViewController {
     
     
 }
-
-// MARK: - Fetch Info API
-
-extension ViewController {
     
-    func fetchInfo() {
-        
-        
-    }
-    
-    
-}

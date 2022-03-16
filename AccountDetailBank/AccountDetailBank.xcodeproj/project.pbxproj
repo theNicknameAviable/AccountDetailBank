@@ -14,8 +14,6 @@
 		4F659D7727DFD0BD00354643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7527DFD0BD00354643 /* Main.storyboard */; };
 		4F659D7927DFD0C000354643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7827DFD0C000354643 /* Assets.xcassets */; };
 		4F659D7C27DFD0C000354643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7A27DFD0C000354643 /* LaunchScreen.storyboard */; };
-		4FCF2D8327E26A5600642084 /* APIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8227E26A5600642084 /* APIStruct.swift */; };
-		4FCF2D8527E26A6500642084 /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8427E26A6500642084 /* md5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		4F659D7827DFD0C000354643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F659D7B27DFD0C000354643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F659D7D27DFD0C000354643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FCF2D8227E26A5600642084 /* APIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStruct.swift; sourceTree = "<group>"; };
-		4FCF2D8427E26A6500642084 /* md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = md5.swift; sourceTree = "<group>"; };
 		C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.release.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.release.xcconfig"; sourceTree = "<group>"; };
 		FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.debug.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,22 +66,12 @@
 				4F659D6F27DFD0BD00354643 /* AppDelegate.swift */,
 				4F659D7127DFD0BD00354643 /* SceneDelegate.swift */,
 				4F659D7327DFD0BD00354643 /* ViewController.swift */,
-				4FCF2D8627E26A7300642084 /* Models */,
 				4F659D7527DFD0BD00354643 /* Main.storyboard */,
 				4F659D7827DFD0C000354643 /* Assets.xcassets */,
 				4F659D7A27DFD0C000354643 /* LaunchScreen.storyboard */,
 				4F659D7D27DFD0C000354643 /* Info.plist */,
 			);
 			path = AccountDetailBank;
-			sourceTree = "<group>";
-		};
-		4FCF2D8627E26A7300642084 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4FCF2D8427E26A6500642084 /* md5.swift */,
-				4FCF2D8227E26A5600642084 /* APIStruct.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		AF0DCD9C12E0FA158DBC839F /* Frameworks */ = {
@@ -221,9 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F659D7427DFD0BD00354643 /* ViewController.swift in Sources */,
-				4FCF2D8327E26A5600642084 /* APIStruct.swift in Sources */,
 				4F659D7027DFD0BD00354643 /* AppDelegate.swift in Sources */,
-				4FCF2D8527E26A6500642084 /* md5.swift in Sources */,
 				4F659D7227DFD0BD00354643 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
