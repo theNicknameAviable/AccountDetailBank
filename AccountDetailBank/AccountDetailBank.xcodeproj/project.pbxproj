@@ -15,6 +15,7 @@
 		4F659D7927DFD0C000354643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7827DFD0C000354643 /* Assets.xcassets */; };
 		4F659D7C27DFD0C000354643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7A27DFD0C000354643 /* LaunchScreen.storyboard */; };
 		4FCF2D8827E26DAD00642084 /* AccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8727E26DAD00642084 /* AccountDetail.swift */; };
+		4FCF2D8A27E26E6700642084 /* AccountDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8927E26E6600642084 /* AccountDetail.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4F659D7B27DFD0C000354643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F659D7D27DFD0C000354643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FCF2D8727E26DAD00642084 /* AccountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetail.swift; sourceTree = "<group>"; };
+		4FCF2D8927E26E6600642084 /* AccountDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccountDetail.json; sourceTree = "<group>"; };
 		C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.release.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.release.xcconfig"; sourceTree = "<group>"; };
 		FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.debug.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				4F659D7127DFD0BD00354643 /* SceneDelegate.swift */,
 				4F659D7327DFD0BD00354643 /* ViewController.swift */,
 				4FCF2D8727E26DAD00642084 /* AccountDetail.swift */,
+				4FCF2D8927E26E6600642084 /* AccountDetail.json */,
 				4F659D7527DFD0BD00354643 /* Main.storyboard */,
 				4F659D7827DFD0C000354643 /* Assets.xcassets */,
 				4F659D7A27DFD0C000354643 /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 			files = (
 				4F659D7C27DFD0C000354643 /* LaunchScreen.storyboard in Resources */,
 				4F659D7927DFD0C000354643 /* Assets.xcassets in Resources */,
+				4FCF2D8A27E26E6700642084 /* AccountDetail.json in Resources */,
 				4F659D7727DFD0BD00354643 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
