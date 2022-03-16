@@ -5,16 +5,16 @@
 //  Created by Raul Bautista on 16/3/22.
 //
 
-import Foundation
+
 import UIKit
 
-
 class BankCell: UITableViewCell {
-    
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var amount: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        configureView()
     }
     
     func configureView() {

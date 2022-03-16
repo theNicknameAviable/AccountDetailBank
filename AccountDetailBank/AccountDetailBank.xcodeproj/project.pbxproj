@@ -16,8 +16,8 @@
 		4F659D7C27DFD0C000354643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F659D7A27DFD0C000354643 /* LaunchScreen.storyboard */; };
 		4FCF2D8827E26DAD00642084 /* AccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8727E26DAD00642084 /* AccountDetail.swift */; };
 		4FCF2D8A27E26E6700642084 /* AccountDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8927E26E6600642084 /* AccountDetail.json */; };
-		4FCF2D8D27E2704800642084 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8C27E2704800642084 /* BankCell.swift */; };
 		4FCF2D8F27E2705400642084 /* BankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCF2D8E27E2705400642084 /* BankCell.xib */; };
+		4FCF2D9227E2746F00642084 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF2D9127E2746F00642084 /* BankCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		4F659D7D27DFD0C000354643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FCF2D8727E26DAD00642084 /* AccountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetail.swift; sourceTree = "<group>"; };
 		4FCF2D8927E26E6600642084 /* AccountDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AccountDetail.json; sourceTree = "<group>"; };
-		4FCF2D8C27E2704800642084 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
 		4FCF2D8E27E2705400642084 /* BankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCell.xib; sourceTree = "<group>"; };
+		4FCF2D9127E2746F00642084 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
 		C582115CA42048EE633BE148 /* Pods-AccountDetailBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.release.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.release.xcconfig"; sourceTree = "<group>"; };
 		FF655A44B413F9635FEF6C21 /* Pods-AccountDetailBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountDetailBank.debug.xcconfig"; path = "Target Support Files/Pods-AccountDetailBank/Pods-AccountDetailBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +96,8 @@
 		4FCF2D9027E2705B00642084 /* BankCell */ = {
 			isa = PBXGroup;
 			children = (
-				4FCF2D8C27E2704800642084 /* BankCell.swift */,
 				4FCF2D8E27E2705400642084 /* BankCell.xib */,
+				4FCF2D9127E2746F00642084 /* BankCell.swift */,
 			);
 			path = BankCell;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			files = (
 				4F659D7427DFD0BD00354643 /* ViewController.swift in Sources */,
 				4F659D7027DFD0BD00354643 /* AppDelegate.swift in Sources */,
-				4FCF2D8D27E2704800642084 /* BankCell.swift in Sources */,
+				4FCF2D9227E2746F00642084 /* BankCell.swift in Sources */,
 				4FCF2D8827E26DAD00642084 /* AccountDetail.swift in Sources */,
 				4F659D7227DFD0BD00354643 /* SceneDelegate.swift in Sources */,
 			);
