@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var lastMove: UILabel!
     @IBOutlet weak var accountTable: UITableView!
+    static let host: String = "https://api.myjson.com/bins/1a30k8"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,18 @@ extension ViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         <#code#>
+    }
+    
+    
+}
+
+// MARK: - Fetch Info API
+
+extension ViewController {
+    
+    func fetchInfo() {
+        
+        
     }
     
     
