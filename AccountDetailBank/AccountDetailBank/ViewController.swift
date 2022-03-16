@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var lastMove: UILabel!
     @IBOutlet weak var accountTable: UITableView!
+    var accountDetail : [Transaction] = []
 
     
     override func viewDidLoad() {
@@ -20,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         accountTable.rowHeight = 100
         accountTable.dataSource = self
         accountTable.delegate = self
- 
+        accountDetail = loadJson(filename: "AccountDetail")
     }
 
 
@@ -52,10 +53,21 @@ extension ViewController {
 
 extension ViewController {
     
-    func loadJson() {
-        
-        
+    func loadJson(filename AccountDetail: String) ->[Transaction]  {
+        if let url = Bundle.main.url(forResource: AccountDetail, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(WelcomeElement.self, from: data)
+                return jsonData.transaction
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return []
     }
-    
+        
 }
+    
+
     
