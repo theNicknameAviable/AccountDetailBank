@@ -46,6 +46,14 @@ extension ViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BankCell", for: indexPath) as? BankCell
         cell?.amount.text = "VAT: \(accountDetail[indexPath.row].tramount)"
         cell?.date.text = accountDetail [indexPath.row].trfecha
+        
+        if accountDetail[indexPath.row].tramount > 0 {
+            cell?.lineView.backgroundColor = UIColor(red: 0.37, green: 0.56, blue: 0.22, alpha: 1.00)
+            cell?.arrowImageView.tintColor = UIColor(red: 0.37, green: 0.56, blue: 0.22, alpha: 1.00)
+        } else {
+            cell?.lineView.backgroundColor = UIColor(red: 0.56, green: 0.04, blue: 0.11, alpha: 1.00)
+            cell?.arrowImageView.tintColor = UIColor(red: 0.56, green: 0.04, blue: 0.11, alpha: 1.00)
+        }
 
         if let safeCell = cell {
             return safeCell
@@ -59,7 +67,7 @@ extension ViewController {
 
 extension ViewController {
     
-    func loadJson(filename AccountDetail: String) ->[Transaction]  {
+    func loadJson(filename AccountDetail: String) -> [Transaction]  {
         if let url = Bundle.main.url(forResource: AccountDetail, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
