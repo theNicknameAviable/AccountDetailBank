@@ -49,10 +49,8 @@ extension ViewController {
         
         if accountDetail[indexPath.row].tramount > 0 {
             cell?.lineView.backgroundColor = UIColor(red: 0.37, green: 0.56, blue: 0.22, alpha: 1.00)
-            cell?.arrowImageView.tintColor = UIColor(red: 0.37, green: 0.56, blue: 0.22, alpha: 1.00)
         } else {
             cell?.lineView.backgroundColor = UIColor(red: 0.56, green: 0.04, blue: 0.11, alpha: 1.00)
-            cell?.arrowImageView.tintColor = UIColor(red: 0.56, green: 0.04, blue: 0.11, alpha: 1.00)
         }
 
         if let safeCell = cell {
