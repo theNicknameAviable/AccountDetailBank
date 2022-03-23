@@ -24,7 +24,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         accountDetail = loadJson(filename: "AccountDetail")
     }
 
-
 }
 
 // MARK: - Table Methods
