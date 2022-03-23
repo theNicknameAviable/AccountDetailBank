@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 extension ViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accountTable.count
+        return accountDetail.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -43,7 +43,14 @@ extension ViewController {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BankCell", for: indexPath) as? BankCell
+        cell?.amount.text = "VAT: \(accountDetail[indexPath.row].tramount)"
+        cell?.date.text = accountDetail [indexPath.row].trfecha
+
+        if let safeCell = cell {
+            return safeCell
+        }
+        return UITableViewCell()
     }
     
 }
@@ -66,6 +73,19 @@ extension ViewController {
         return []
     }
         
+}
+
+//MARK: - Date Formatter
+
+extension ViewController {
+    
+    func dateConsult(date:Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm dd/MM/yyyy"
+        let dateConsultFinal = dateFormatter.string(from: date)
+        return dateConsultFinal
+    }
+    
 }
     
 
