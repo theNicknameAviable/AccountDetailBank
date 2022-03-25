@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,27 +23,38 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kY-6l-oAK">
-                        <rect key="frame" x="20" y="14" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kY-6l-oAK">
+                        <rect key="frame" x="20" y="12" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-0e-P5y">
-                        <rect key="frame" x="20" y="15" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-pT-59D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="zRV-CS-rnc"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="2kY-6l-oAK" firstAttribute="top" secondItem="yMA-pT-59D" secondAttribute="bottom" constant="8" id="0Dr-OT-hGZ"/>
+                    <constraint firstAttribute="trailing" secondItem="yMA-pT-59D" secondAttribute="trailing" id="TQF-RH-aLc"/>
+                    <constraint firstItem="yMA-pT-59D" firstAttribute="top" secondItem="YU4-2p-mJ8" secondAttribute="top" id="lGd-IY-wf9"/>
+                    <constraint firstItem="yMA-pT-59D" firstAttribute="leading" secondItem="YU4-2p-mJ8" secondAttribute="leading" id="q8V-bI-9nN"/>
+                </constraints>
                 <connections>
                     <outlet property="amount" destination="I0c-Qb-IwF" id="CWd-8G-6tq"/>
                     <outlet property="date" destination="2kY-6l-oAK" id="MgT-Oi-mU2"/>
+                    <outlet property="lineView" destination="yMA-pT-59D" id="6dI-MU-eEs"/>
                 </connections>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-542.02898550724638" y="158.37053571428569"/>
+            <point key="canvasLocation" x="-542.02898550724638" y="157.70089285714286"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
