@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lastMove.text = accountDetail.
         accountTable.rowHeight = 100
         accountTable.dataSource = self
         accountTable.delegate = self
