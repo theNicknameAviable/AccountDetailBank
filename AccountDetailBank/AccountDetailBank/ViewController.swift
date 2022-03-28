@@ -5,8 +5,8 @@
 //  Created by Raul Bautista on 14/3/22.
 //
 
-// TO DO: - en el Label, aparezca el último movimiento de fecha.
-// TO DO: - solucionar fatal error expected to decode dictiornary.
+// TO DO: - en el Label, aparezca el último movimiento de fecha. Fix
+// TO DO: - solucionar fatal error expected to decode dictionary.
 
 import UIKit
 import Alamofire
@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lastMove.text = accountDetail.
+        lastMove.text = accountDetail[0].trfecha
         accountTable.rowHeight = 100
         accountTable.dataSource = self
         accountTable.delegate = self
