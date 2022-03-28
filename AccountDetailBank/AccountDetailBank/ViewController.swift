@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lastMove.text = accountDetail[0].trfecha
+        lastMove.text = accountDetail[6].trfecha
         accountTable.rowHeight = 100
         accountTable.dataSource = self
         accountTable.delegate = self
@@ -74,8 +74,8 @@ extension ViewController {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let jsonData = try decoder.decode(WelcomeElement.self, from: data)
-                return jsonData.transaction
+                let jsonData = try decoder.decode([WelcomeElement].self, from: data)
+                return jsonData
             } catch {
                 print("error:\(error)")
             }

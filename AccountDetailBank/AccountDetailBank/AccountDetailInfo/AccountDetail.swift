@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - WelcomeElement
 struct WelcomeElement: Codable {
-    let transaction: [Transaction]
+    let transaction: Transaction
 }
 
 // MARK: - Transaction
