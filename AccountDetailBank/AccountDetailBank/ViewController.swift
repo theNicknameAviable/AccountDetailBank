@@ -5,7 +5,7 @@
 //  Created by Raul Bautista on 14/3/22.
 //
 
-// TO DO: - en el Label, aparezca el último movimiento de fecha. Fix
+// TO DO: - en el Label, aparezca el último movimiento de fecha.
 // TO DO: - solucionar fatal error expected to decode dictionary.
 
 import UIKit
