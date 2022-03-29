@@ -48,7 +48,7 @@ extension ViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BankCell", for: indexPath) as? BankCell
-        cell?.amount.text = "VAT: \(accountDetail[indexPath.row].tramount)"
+        cell?.amount.text = "\(accountDetail[indexPath.row].tramount)"
         cell?.date.text = accountDetail [indexPath.row].trfecha
         
         if accountDetail[indexPath.row].tramount > 0 {
